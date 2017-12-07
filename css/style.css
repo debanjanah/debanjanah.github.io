@@ -1,0 +1,41 @@
+html{
+  font-family: serif;
+}
+
+a{
+  text-decoration: none;
+  color: #027688;
+}
+
+a:hover{
+  color: #003f49;
+}
+
+ul{
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+li{
+  display: inline;
+}
+
+.social{
+  margin-top: 50px;
+}
+
+.social p{
+  margin: 0 !important;
+}
+
+li::after{
+  content: "//";
+  color: #d8d8d8;
+  margin-left: 4px;
+  position: relative;
+  top: 2px;
+}
+
+li:last-of-type:after{
+  content: none;
+}
