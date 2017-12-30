@@ -332,7 +332,7 @@ h1{
   padding: 0px;
 }
 
-.iblock img, .iblock video{
+.iblock img{
   width: 80%;
   margin: 30px auto 10px auto;
   /*padding: 10px;*/
