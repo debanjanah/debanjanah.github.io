@@ -198,6 +198,10 @@ body{
   opacity: 0.7;
 }
 
+div.gif{
+  animation-iteration-count: infinite;
+}
+
 h1{
   font-size: 30px;
   font-family:'Montserrat', sans-serif;
