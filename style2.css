@@ -463,6 +463,8 @@ footer{
 footer .social{
   letter-spacing: 0.5px;
   line-height: 20px;
+  position: relative;
+  right: 2px;
 }
 
 .wrapdown p{
