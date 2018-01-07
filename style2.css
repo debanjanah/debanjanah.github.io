@@ -514,6 +514,11 @@ footer .social{
     display: inline;
   }
 
+#smol{
+  opacity: 0.5;
+  font-size: 13px;
+}
+
 .wanderer{
   width: 95%;
   max-width: 594px;
