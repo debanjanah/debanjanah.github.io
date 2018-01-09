@@ -517,3 +517,8 @@ footer .social{
 .social li {
     display: inline;
   }
+
+#smol{
+  opacity: 0.5;
+  font-size: 13px;
+}
