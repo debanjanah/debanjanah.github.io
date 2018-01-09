@@ -15,6 +15,10 @@
   .pwrap .iblock img{
     width: 100%;
   }
+
+  body .wrap{
+  	width: 95%;
+  }
 }
 
 @media (min-width: 992px) {
