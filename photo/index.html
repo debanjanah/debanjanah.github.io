@@ -3,11 +3,39 @@
 <head>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-88271466-1"></script>
+  <script>    
+    $.ajax
+    ({
+        url: "http://api.tumblr.com/v2/blog/debanjanah.tumblr.com/posts?api_key=MMXUkcEdSuqT35zYRbC81V8meQnwQ5lSAX22McXOZ7ifSEFJor",
+        dataType: 'jsonp',
+        success: function(posts){
+          var postings = posts.response.posts;
+          console.log(postings);
+          var text = '';
+
+        for (var i in postings) {
+           var p = postings[i];
+          text += '';
+        if(p.type == 'photo'){
+        text +='<a target="_blank" href='+ p.post_url +'><div><img src=' +  p.photos[0].original_size.url + '>' + p.caption
+        }
+        if(p.type == 'video'){
+        text += p.player[0].embed_code +'<p></p>' + p.caption;
+        }
+          if(p.type == 'text'){
+          text += p.body + p.caption;
+        }
+    
+          text += '</div></a>';
+          }
+          $('#content').append(text);
+        }
+    });
+  </script>
   <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments)};
   gtag('js', new Date());
-
   gtag('config', 'UA-88271466-1');
   </script>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -61,30 +89,4 @@
     </footer>
   </div>
 </body>
-  <script>    $.ajax({
-        url: "http://api.tumblr.com/v2/blog/debanjanah.tumblr.com/posts?api_key=MMXUkcEdSuqT35zYRbC81V8meQnwQ5lSAX22McXOZ7ifSEFJor",
-        dataType: 'jsonp',
-        success: function(posts){
-          var postings = posts.response.posts;
-          console.log(postings);
-          var text = '';
-
-    for (var i in postings) {
-           var p = postings[i];
-          text += '';
-      if(p.type == 'photo'){
-        text +='<a target="_blank" href='+ p.post_url +'><div><img src=' +  p.photos[0].original_size.url + '>' + p.caption
-      }
-        if(p.type == 'video'){
-        text += p.player[0].embed_code +'<p></p>' + p.caption;
-      }
-          if(p.type == 'text'){
-        text += p.body + p.caption;
-      }
-    
-          text += '</div></a>';
-          }
-          $('#content').append(text);
-        }
-    });</script>
 </html>
