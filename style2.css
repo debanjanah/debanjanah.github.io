@@ -454,7 +454,7 @@ transform: scale(0.98);
 }
 
 #itme{
-  cursor: pointer;
+  cursor: default;
 }
 
 #itme:hover{
@@ -560,6 +560,17 @@ transform: scale(0.99);
 p a:hover{
 opacity: 0.7;
 }
+
+
+.wabi { 
+  animation: fadeIn 2s; 
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
 
 <b> - Bold text
 <strong> - Important text

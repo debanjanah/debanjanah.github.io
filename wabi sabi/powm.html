@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html class="gr__debanjana_com">
+<head>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-88271466-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments)};
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-88271466-1');
+	</script>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="google-site-verification" content="mWgaNU0J4-XnOfAVixGFeDqLE8TFkK4dz43KtQ1sfTI" />
+  	<meta charset="UTF-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<meta name="description" content="Debanjana Haldar's design portfolio.">
+  	<meta name="p:domain_verify" content="cec7def9279cf994c543b52d601efea6"/>
+  	<title>wabi-sabi</title>
+  	<link rel="icon" href="a.png">
+  	<link rel="stylesheet" href="../style2.css">
+  	<script src="script.js" type="text/javascript"></script>
+  	<link href="https://fonts.googleapis.com/css?family=Inconsolata|Montserrat" rel="stylesheet">
+</head>
+
+<body>
+  <div id="grad"></div>
+  <div class="wrap">
+    <header class="wrapup"> 
+      <div class="nav">
+        <div id="about">
+          <a href="https://www.debanjana.com/"><img src="../a.png"></a>
+        </div>
+      </div>            
+    </header>
+    <div class="work">
+      <div class="pwrap"> 
+        <div class="heading">
+          <h2>wabi sabi✨</h2>
+          <h3></h3>
+        </div>
+        <div class="break"></div>
+        <div class="wabi">
+        	<label for="answer">what was the sentence you liked the most?</label>
+			<input type="text" id="answer" placeholder="type here..." maxlength="15">
+			<div class="break"></div>
+			<label for="feel">in one word, how do you feel right now?</label>
+			<input type="text" id="feel" placeholder="i feel..." maxlength="15">
+			<div class="break"></div>
+			<input type="button" id="btn" value="🪄 silly powm 🪄">
+
+			<p class="powm" id="powm1"></p>
+			<script type="text/javascript">
+				const feeling = document.getElementById('feel');
+				const answering = document.getElementById('answer');
+				const button = document.getElementById('btn');
+				const yee = document.getElementById('powm1');
+
+				document.getElementById('btn').onclick = function() {
+
+						if (feeling.value=="" && answering.value=="") {
+						alert("no answer? </3 :(");
+					}
+					else if (feeling.value=="") {
+						alert("but how do you feel?!");
+					}
+					else if (answering.value=="") {
+						alert("but which sentence did u like?!");
+					}
+					else {
+						function fun1(){
+							yee.innerHTML = "when i asked the world <br> &emsp; &emsp; &emsp; to make me feel <i>"+feeling.value+"</i>, <br> it replied,<br> &emsp; &emsp; &emsp; <i> "+answering.value+"</i>";
+						}
+						fun1();
+					}
+
+				};
+			</script>        	
+        </div>
+      </div>
+      <div class="break"></div>
+      <div class="break"></div>
+    </div>
+    <footer class="wrapdown">
+      <ul class="social">
+        <li id="tm"><a href="https://www.behance.net/debanjanah" target="_blank"><img alt="behance" title="behance" src="../ar.png"></a></li>
+        <li id="dr"><a href="https://dribbble.com/debanjanah" target="_blank"><img alt="dribbble" title="dribbble" src="../dr.png" alt="dribbble"></a></li>
+        <li id="md"><a href="https://medium.com/@debanjanah" target="_blank"><img alt="medium" title="medium" src="../md.png" alt="medium"></a></li>
+        <li id="em"><a href="mailto:debanjana.h@gmail.com"><img alt="mail" title="mail" src="../em.png" alt="email"></a></li>
+      </ul>
+      <p>Thanks for stopping by!</p>
+      <span id="nm">নমস্কার</span>
+    </footer>
+  </div>
+</body>
+</html>
